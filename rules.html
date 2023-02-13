@@ -1,0 +1,87 @@
+<html>
+  <head>
+	<link id="csslink" rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function toggleCSS() {
+			// Obtains the <link> element that links to the css (by using its id).
+			var currentCSS = document.getElementById('csslink');
+	
+			// Change the value of href attribute to change the css file.
+			if (currentCSS.getAttribute('href') == 'style.css') {
+			  currentCSS.setAttribute('href', 'alternate.css');
+			} else {
+			  currentCSS.setAttribute('href', 'style.css');
+			}
+		}
+	</script>
+  </head>
+  <body>
+	<header>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Introduction</a></li>
+			<li><a href="rules.html">Rules and Strategy</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	<div id="container">
+		<button onclick="toggleCSS()">Toggle CSS</button>
+	</div>
+    <h1>Pickleball: Rules and Strategy</h1>
+    <h2>Rules of Pickleball</h2>
+    <p>Pickleball is a relatively simple sport to learn, but it is important to know the rules of the game in order to play it correctly. Here are the basic rules of pickleball:</p>
+    <ul>
+		<li>The game is played on a court that is 20x44 feet (6.1x13.4 meters).</li>
+		<li>The net is 36 inches (91.4 cm) high at the center and 34 inches (86.4 cm) high at the posts.</li>
+		<li>The ball must be served diagonally, and it must land in the opponent's court.</li>
+		<li>The ball can only be hit with the paddle one time before it must go over the net.</li>
+		<li>If the ball lands out of bounds or hits a non-playable area, it is a fault.</li>
+		<li>A point is scored when the opponent is unable to return the ball or hits the ball out of bounds. The first player or team to score 11 points and have a two-point lead wins the game.</li>
+	</ul>
+	<p style="text-align: center;">For a complete set of rules and regulations, you can refer to the official rulebook of the <a href="https://usapickleball.org/" target="_blank">USA Pickleball Association</a> website.	<a href="https://usapickleball.org/" target="_blank"> <img src="USAPA_Logo_Header.png" alt="Pickleball Image" width="75"	height="50"> </a></p>
+	<table>
+		<h2>Equipment Used in Pickleball</h2>
+		<tr>
+		  <th>Equipment Required</th>
+		  <th>Description</th>
+		</tr>
+		<tr>
+		  <td>Ball</td>
+		  <td>A perforated polymer ball similar to a wiffle ball, but slightly smaller and heavier.</td>
+		</tr>
+		<tr>
+		  <td>Paddle</td>
+		  
+		  <td>A paddle used to hit the ball, made of wood, composite, or graphite materials.</td>
+		</tr>
+		<tr>
+		  <td>Net</td>
+		  <td>A tennis-style net that separates the playing area and is hung at a height of 36 inches at the center.</td>
+		</tr>
+		<tr>
+		  <td>Court</td>
+		  <td>A rectangular playing area that measures 20 x 44 feet for doubles and 20 x 34 feet for singles.</td>
+		</tr>
+	</table>
+	<p style = "text-align: center;"><img class = "bordered-image" src="ball.jpg" alt="Paddle" width="150"	height="150"></a> <img class = "bordered-image" src="paddle.jpg" alt="Paddle" width="150"	height="150"></a></p>
+	<p style="text-align: center;"><img class = "bordered-image" src="net.jpg" alt="Pickleball Net" width="600"	height="500"></a></p>
+	<p style="text-align: center;"><img class = "bordered-image" src="PickleballCourtGraphic.png" alt="Pickleball Court" width="750"	height="500"></a></p>
+	<p style="text-align: center;">Here is an image of a pickleball court! Image from the following <a href="https://usapickleball.org/what-is-pickleball/court-diagram/do-it-yourself-guidelines/" target="_blank">link</a></p>
+	<h2>Strategy for Pickleball</h2>
+	<p>Pickleball is a fast-paced and dynamic sport, and a key part of the game is strategy. Here are a few tips and tricks to help you improve your pickleball game:</p>
+	<ul>
+		<li>Work on your serve - A strong serve can give you an advantage in the game and help you put pressure on your opponent.</li>
+		<li>Be patient - Pickleball is a game of strategy, and it's important to wait for the right opportunity to make your move.</li>
+		<li>Communicate with your partner - Communication is key in pickleball, especially when playing doubles. Make sure you are communicating with your partner about where to place the ball and who will be responsible for certain shots.</li>
+		<li>Practice your footwork - Good footwork can help you get to the ball faster and make it easier to hit a shot accurately.</li>
+		<li>Know your opponent - Pay attention to your opponent's strengths and weaknesses, and adjust your strategy accordingly.</li>
+	</ul>
+	<p style="text-align: center;">By practicing these tips and continuing to play the game, you will become a better pickleball player in no time!</p>
+	</body>
+	<div id="container">
+		<button onclick="toggleCSS()">Toggle CSS</button>
+	</div>
+	<footer>
+	Copyright &copy; 2023 Pickleball Inc.
+	</footer>
+	</html>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+	<link id="csslink" rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function toggleCSS() {
+			// Obtains the <link> element that links to the css (by using its id).
+			var currentCSS = document.getElementById('csslink');
+	
+			// Change the value of href attribute to change the css file.
+			if (currentCSS.getAttribute('href') == 'style.css') {
+			  currentCSS.setAttribute('href', 'alternate.css');
+			} else {
+			  currentCSS.setAttribute('href', 'style.css');
+			}
+		}
+	</script>
+    <title>Pickleball: An Introduction</title>
+  </head>
+  <body>
+	<header>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Introduction</a></li>
+			<li><a href="rules.html">Rules and Strategy</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	<div id="container">
+		<button onclick="toggleCSS()">Toggle CSS</button>
+	</div>
+    <h1>Pickleball: An Introduction</h1>
+	<h2>The Basics</h2>
+    <p>Pickleball is a sport that combines elements of tennis, badminton, and table tennis. It is a fast-paced and dynamic game that is played on a court that is a fraction of the size of a tennis court. The sport was first invented in 1965 in Bainbridge Island, Washington, and since then it has grown in popularity across the United States and the world.</p>
+    <p>Pickleball can be played both indoor and outdoor, and it is a game that can be enjoyed by people of all ages and skill levels. The game is played with a paddle and a perforated ball, and it is scored similarly to tennis. The objective of the game is to hit the ball back and forth over the net and to score points by landing the ball in your opponent's court. </p>
+    <h2>History of Pickleball</h2>
+    <p>Pickleball was created in 1965 by three friends who were looking for a new summertime activity to play. They combined elements of different sports that they enjoyed and created a new game that was easy to learn and fun to play. Over the years, the sport has evolved and improved, and today it is played by millions of people around the world.</p>
+	<p style = "text-align: center;"> <img src="creators.jpeg" alt="creators"></p>
+	<p style = "text-align: center;"> Here we can see the three men responsbile for the creation of pickleball: Barney McCallum, Joel Pritchard, and Bill Bell.</p>
+	<p>In the early days of pickleball, the sport was played on badminton courts with wooden paddles and a Wiffle ball. As the game gained popularity, specialized equipment was developed, and today pickleball is played with high-quality paddles and balls that are specifically designed for the sport. </p>
+    <p>Today, pickleball is a competitive sport that is played in local, national, and international tournaments, and it is also a popular recreational activity for families and friends.</p>
+	<p>For more information on the history of pickleball, visit the <a href="https://en.wikipedia.org/wiki/Pickleball" target="_blank">Wikipedia</a>.</p>
+	<div id="container">
+		<button onclick="toggleCSS()">Toggle CSS</button>
+	</div>
+	<footer>
+	Copyright &copy; 2023 Pickleball Inc.
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+ body {
+	background-color: lightblue; 
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  nav a:hover {
+    background-color: blue;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: darkblue;
+    text-align: center;
+  }
+  
+  h1 {
+    animation: slideInLeft 1s ease;
+  }
+  
+  h2 {
+    animation: slideInRight 1s ease;
+  }
+  
+  h3 {
+    animation: slideInUp 1s ease;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  th, td {
+    border: 1px solid darkgray;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
+  
+  button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: darkblue;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+    animation: shake 0.8s linear infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  
+  button:hover {
+	background-color: lightblue;
+  }
+
+  p {
+	font-size: larger; 
+	color: #333; 
+	text-align: justify; 
+  }
+
+  footer {
+    font-size: larger; 
+	text-align: center; 
+	color: #333; 
+	padding: 1em; 
+  }
+
+  .bordered-image {
+    border: 5px solid darkblue;
+  }
